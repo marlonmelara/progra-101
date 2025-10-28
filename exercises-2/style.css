@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(135 135 192);
+}
+
+div {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  background: #007bff;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
