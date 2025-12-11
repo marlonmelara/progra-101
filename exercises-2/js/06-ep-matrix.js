@@ -7,11 +7,11 @@
  * 5 10 15 20 25
  */
 
-let array: number = [1, 2, 3, 4, 5];
+let array = [1, 2, 3, 4, 5];
 
-for (let i = 0; i < array.length; i++) {
-  let line: string = '';
-  for (let j = 0; j < array.length; j++) {
+for (let i = 1; i <= array.length; i++) {
+  let line = '';
+  for (let j = 1; j <= array.length; j++) {
     line += ` ${j * i}`;
   }
   console.log(line);

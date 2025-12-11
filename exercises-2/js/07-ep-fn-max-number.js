@@ -5,8 +5,8 @@
 // function max(a: number, b: number, c: number) recibe solo 3 argumenteos
 // let numbers: number[] = [a, b, c]; arreglo manual
 
-function max(...numbers: number[]) {
-  let maxNumber: number = numbers[0];
+function max(...numbers) {
+  let maxNumber = numbers[0];
 
   for (let i = 1; i < numbers.length; i++) {
     if (numbers[i] >= maxNumber) {
