@@ -10,3 +10,28 @@
 // let newHeroes = [];
 // Se puede insertar en el arreglo así:
 // newHeroes.push('Hulk');
+
+// names[i].at(0) === initial
+
+function startsWith(names: string[], initial: string) {
+  const newHeroes: string[] = [];
+  for (let i = 0; i < names.length; i++) {
+    if (names[i].startsWith(initial)) {
+      newHeroes.push(names[i]);
+    }
+  }
+  return newHeroes;
+}
+
+let heroes = [
+  'Doom',
+  'Dr. Strange',
+  'Hulk',
+  'She Hulk',
+  'Spiderman',
+  'Captain Marvel',
+];
+
+let herosWithLetterS = startsWith(heroes, 'D');
+
+console.log(herosWithLetterS);

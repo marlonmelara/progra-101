@@ -2,7 +2,7 @@
 // let maxValue = max( 5, 2, 6);
 // console.log( maxValue ); // 6
 
-// function max(a: number, b: number, c: number) recibe solo 3 argumenteos
+// function max(a: number, b: number, c: number) recibe solo 3 argumentos
 // let numbers: number[] = [a, b, c]; arreglo manual
 
 function max(...numbers: number[]) {
