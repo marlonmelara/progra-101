@@ -15,9 +15,9 @@
 
 function startsWith(names: string[], initial: string) {
   const newHeroes: string[] = [];
-  for (let i = 0; i < names.length; i++) {
-    if (names[i].startsWith(initial)) {
-      newHeroes.push(names[i]);
+  for (let name of names) {
+    if (name.startsWith(initial)) {
+      newHeroes.push(name);
     }
   }
   return newHeroes;
@@ -32,6 +32,6 @@ let heroes = [
   'Captain Marvel',
 ];
 
-let herosWithLetterS = startsWith(heroes, 'D');
+let heroesWithLetter = startsWith(heroes, 'D');
 
-console.log(herosWithLetterS);
+console.log(heroesWithLetter);
